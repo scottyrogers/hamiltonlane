@@ -154,3 +154,29 @@ body {
 .menu-toggle.active .menu-bar:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/* Style for the "Menu" text and menu lines */
+.menu-label {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+}
+
+.menu-label span {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  color: #A15635; /* Use your primary color for menu text */
+  margin-right: 10px; /* Adjust spacing between "Menu" text and icon */
+}
+
+.menu-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Vertically distribute the bars evenly */
+  height: 20px; /* Adjust the total height as needed */
+}
+
+.menu-bar {
+  width: 30px;
+  height: 3px;
+  background-color: #A15635; /* Use your primary color for menu icon */
+  transition: 0.4s;
+}
