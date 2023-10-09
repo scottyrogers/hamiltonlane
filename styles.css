@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #707070; /* Use accent color for text */
+  }
+  
+  a {
+    color: #A15635; /* Use primary color for links */
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #FFFFFF; /* Use accent color 2 for the header background */
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF; /* Use accent color 2 for hero text */
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(165, 86, 53, 0.8); /* Use primary color with reduced opacity for hero content background */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #A15635; /* Use primary color for headings */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #A15635; /* Use primary color for headings */
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #E2DED4; /* Use secondary color for section backgrounds */
+  }
+  
+  .section h2 {
+    margin-bottom: 40px;
+  }
+  
+  .section img {
+    max-width: 100%;
+  }
+  
+  .testimonials-section {
+    background-color: #F8F8F8; /* Use a light background color for testimonials section */
+  }
+  
+  .testimonial {
+    padding: 20px;
+    border: 1px solid #707070; /* Use accent color for testimonial borders */
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Call to Action */
+  .cta-section {
+    background-color: #A15635; /* Use primary color for the call-to-action section background */
+    color: #FFFFFF; /* Use accent color 2 for CTA text */
+    padding: 100px 0;
+  }
+  
+  .cta-section h2 {
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFFFF; /* Use accent color 2 for button background */
+    color: #A15635; /* Use primary color for button text */
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #707070; /* Use accent color for the footer background */
+    color: #FFFFFF; /* Use accent color 2 for footer text */
+    text-align: center;
+    padding: 20px;
+  }
+ 
+/* Add your existing styles here */
+
+/* Add your existing styles here */
+
+/* Add styles for the "Menu" button toggle */
+.menu-toggle {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-bar {
+  width: 30px;
+  height: 3px;
+  background-color: #A15635; /* Use primary color for menu icon */
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-toggle.active .menu-bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .menu-bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
