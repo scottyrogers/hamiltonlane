@@ -125,35 +125,6 @@ body {
  
 /* Add your existing styles here */
 
-/* Add styles for the "Menu" button toggle */
-.menu-toggle {
-  display: block;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.menu-bar {
-  width: 30px;
-  height: 3px;
-  background-color: #A15635; /* Use primary color for menu icon */
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.menu-toggle.active .menu-bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.menu-toggle.active .menu-bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.active .menu-bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
 
 /* Style for the "Menu" text and menu lines */
 .menu-toggle {
@@ -164,7 +135,6 @@ body {
 .menu-label {
   font-size: 1.2rem; /* Adjust font size as needed */
   color: #A15635; /* Use your primary color for menu text */
-  margin-right: 10px; /* Adjust spacing between "Menu" text and icon */
 }
 
 .menu-bars {
@@ -172,7 +142,9 @@ body {
   height: 3px;
   background-color: #A15635; /* Use your primary color for menu icon */
   transition: 0.4s;
+  margin-right: 10px; /* Adjust spacing between hamburger lines and text */
 }
+
 
 .menu-toggle.active .menu-bars:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -184,4 +156,10 @@ body {
 
 .menu-toggle.active .menu-bars:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Style for the "Menu" text and menu lines */
+.menu-toggle {
+  display: flex;
+  align-items: center; /* Vertically center the content */
 }
